@@ -152,3 +152,24 @@ main {
         gap: 1rem;
     }
 }
+
+/* Desktop Layout Adjustments */
+@media (min-width: 769px) {
+    .band-logo {
+        max-height: 70vh; /* Limit height to 70% of viewport height */
+    }
+    
+    .responsive-img {
+        max-height: 70vh;
+        width: auto;
+        margin: 0 auto;
+    }
+    
+    main {
+        gap: 2rem; /* Reduce gap between logo and social links */
+    }
+    
+    .social-links {
+        margin-top: 0; /* Remove additional top margin */
+    }
+}
