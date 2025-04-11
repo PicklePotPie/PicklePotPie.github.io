@@ -21,7 +21,9 @@ This guide provides step-by-step instructions for setting up your custom domain 
 Log in to your domain registrar (where you purchased your domain) and add the following DNS records:
 
 ### For Apex Domain (thecalmbluesea.com)
+
 Add these A records:
+
 - Type: A
 - Name: @ (or leave blank)
 - Value: 185.199.108.153
@@ -30,8 +32,10 @@ Add these A records:
 - Value: 185.199.111.153
 - TTL: 3600 (or default)
 
-### For www Subdomain (www.thecalmbluesea.com)
+### For www Subdomain (<www.thecalmbluesea.com>)
+
 Add this CNAME record:
+
 - Type: CNAME
 - Name: www
 - Value: yourusername.github.io (replace with your GitHub username)
@@ -52,6 +56,7 @@ DNS changes can take anywhere from a few minutes to 48 hours to propagate. Durin
 ## Step 5: Verify Setup
 
 After DNS propagation:
+
 1. Visit your domain in a browser
 2. Verify that your website loads correctly
 3. Check that the URL remains your custom domain
@@ -60,6 +65,7 @@ After DNS propagation:
 ## Troubleshooting
 
 If your domain isn't working after 48 hours:
+
 - Verify DNS settings at your registrar
 - Check the CNAME file in your repository
 - Ensure your GitHub Pages site is publishing from the correct branch
